@@ -23,6 +23,12 @@
       </form>
       <h3>Bonus:</h3>
       <p>Use only one text input, and enable users to input as many test scores as they want, separated by commas. Take the average of all the test scores except the lowest.</p>
+      <form>
+        <div class="row">
+          <div class="col-md-2"><input type="text" id="bonusField" class="form-control"></div>
+        </div>
+        <button onclick="problemOneBonus(); return false;" class="btn btn-default">Find Your Test Grade</button>
+      </form>
     </div>
 
     <div class="well row">
@@ -62,12 +68,12 @@
       <p>Enter each of your 6 letter grades in the input boxes below, and click "Find Your GPA" to run problemTwo() and print your GPA to the console.</p>
       <form>
         <div class="row">
-          <div class="col-md-2"><input type="text" id="grade1" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade2" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade3" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade4" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade5" class="form-control"></div>
-          <div class="col-md-2"><input type="text" id="grade6" class="form-control"></div>
+          <div class="col-md-2"><input type="text" id="grade1" class="form-control"><input type="checkbox" id="gradeHonors1"></div>
+          <div class="col-md-2"><input type="text" id="grade2" class="form-control"><input type="checkbox" id="gradeHonors2"></div>
+          <div class="col-md-2"><input type="text" id="grade3" class="form-control"><input type="checkbox" id="gradeHonors3"></div>
+          <div class="col-md-2"><input type="text" id="grade4" class="form-control"><input type="checkbox" id="gradeHonors4"></div>
+          <div class="col-md-2"><input type="text" id="grade5" class="form-control"><input type="checkbox" id="gradeHonors5"></div>
+          <div class="col-md-2"><input type="text" id="grade6" class="form-control"><input type="checkbox" id="gradeHonors6"></div>
         </div>
         <button onclick="problemTwo(); return false;" class="btn btn-default">Find Your GPA</button>
       </form>
